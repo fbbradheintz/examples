@@ -17,6 +17,51 @@ from transformer_net import TransformerNet
 from vgg import Vgg16
 
 
+class NeuralStyleTrainer():
+    
+    # def __init__(self,
+    #     epochs=2,
+    #     batch_size=4,
+    #     dataset='images', # folder of structure 'topname/somenames/files.jpg'
+    #     style_image='style-image.jpg',
+    #     save_model_dir='models',
+    #     checkpoint_model_dir='models',
+    #     image_size=256,
+    #     style_size=None,
+    #     cuda=True, # but depends on presence of hw
+    #     seed=42,
+    #     content_weight=float(1e5),
+    #     style_weight=float(1e10),
+    #     lr=float(1e-3),
+    #     log_interval=10,
+    #     checkpoint_interval=2000
+    #     ):
+    def __init__(self):
+        self.args = object()
+        self.args.epochs = 2
+        # self.args.epochs = epochs
+        # self.args.batch_size = batch_size
+        # self.args.dataset = dataset
+        # self.args.style_image = style_image
+        # self.args.save_model_dir = save_model_dir
+        # self.args.checkpoint_model_dir = checkpoint_model_dir
+        # self.args.image_size = image_size
+        # self.args.style_size = style_size
+        # self.args.cuda = cuda
+        # self.args.seed = seed
+        # self.args.content_weight = content_weight
+        # self.args.style_weight = style_weight
+        # self.args.lr = lr
+        # self.args.log_interval = log_interval
+        # self.args.checkpoint_interval = checkpoint_interval
+
+
+class NeuralStyleTransfer():
+    def __init__(self):
+        self.args = object()
+        self.args.foo = 1
+
+
 def check_paths(args):
     try:
         if not os.path.exists(args.save_model_dir):
